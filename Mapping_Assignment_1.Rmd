@@ -80,7 +80,7 @@ ggplot() + geom_polygon(data = state, aes(x=long, y = lat, group = group),
 ```
 
 
-<center><span style="color:navy">**Map of one of my study sites, located in the Cheatham Wildlife Management Area in Cheatham County, TN.**</span></center>
+<center><span style="color:navy">**Map of my four study sites, located in the Montgomery, Cheatham, and Davidson Counties, TN.**</span></center>
   
   $~$
   $~$
