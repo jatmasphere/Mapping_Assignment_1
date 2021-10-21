@@ -104,8 +104,9 @@ leaflet(lowaOGR) %>%
                    color = "white",
                    fillColor = "green",
                    fillOpacity = 0.9) %>%
+  addMiniMap(zoomLevelOffset = -4, width = 100, height = 120)  %>%
   addLayersControl(
-    baseGroups = c("OSM", "CartoDB", "NatGeo", "ESRI"),
+    baseGroups = c("ESRI", "NatGeo", "OSM", "CartoDB"),
     options = layersControlOptions(collapsed = FALSE),
     overlayGroups = "Beaman Park")
 ```
@@ -122,9 +123,10 @@ leaflet(lowa2OGR) %>%
                    weight = 2,
                    color = "black",
                    fillColor = "lightblue",
-                   fillOpacity = 0.9) %>%
+                   fillOpacity = 0.9) %>%  
+  addMiniMap(zoomLevelOffset = -4, width = 100, height = 120)  %>%
   addLayersControl(
-    baseGroups = c("OSM", "CartoDB", "NatGeo", "ESRI"),
+    baseGroups = c("ESRI", "NatGeo", "OSM", "CartoDB"),
     options = layersControlOptions(collapsed = FALSE),
     overlayGroups = "Rotary Park")
 ```
@@ -142,8 +144,9 @@ leaflet(lowa3OGR) %>%
                    color = "black",
                    fillColor = "orange",
                    fillOpacity = 0.9) %>%
+    addMiniMap(zoomLevelOffset = -4, width = 100, height = 120)  %>%
   addLayersControl(
-    baseGroups = c("OSM", "CartoDB", "NatGeo", "ESRI"),
+    baseGroups = c("ESRI", "NatGeo", "OSM", "CartoDB"),
     options = layersControlOptions(collapsed = FALSE),
     overlayGroups = "Dr. Schiller's Property")
 ```
@@ -160,9 +163,9 @@ leaflet(lowa4OGR) %>%
                    weight = 2,
                    color = "white",
                    fillColor = "red",
-                   fillOpacity = 0.9) %>%
+                   fillOpacity = 0.9) %>%  addMiniMap(zoomLevelOffset = -4, width = 100, height = 120)  %>%
   addLayersControl(
-    baseGroups = c("OSM", "CartoDB", "NatGeo", "ESRI"),
+    baseGroups = c("ESRI", "NatGeo", "OSM", "CartoDB"),
     options = layersControlOptions(collapsed = FALSE),
     overlayGroups = "Cheatham WMA")
 ```
